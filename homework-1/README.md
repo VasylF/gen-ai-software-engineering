@@ -92,7 +92,7 @@ pip install -r requirements.txt
 python app.py
 ```
 
-The API will start on `http://localhost:5000`
+The API will start on `http://localhost:8000`
 
 ## 📚 API Documentation
 
@@ -111,7 +111,7 @@ The API will start on `http://localhost:5000`
 
 **Create a Transfer:**
 ```bash
-curl -X POST http://localhost:5000/transactions \
+curl -X POST http://localhost:8000/transactions \
   -H "Content-Type: application/json" \
   -d '{
     "fromAccount": "ACC-11111",
@@ -125,21 +125,21 @@ curl -X POST http://localhost:5000/transactions \
 **Filter Transactions:**
 ```bash
 # By account
-curl "http://localhost:5000/transactions?accountId=ACC-12345"
+curl "http://localhost:8000/transactions?accountId=ACC-12345"
 
 # By type
-curl "http://localhost:5000/transactions?type=transfer"
+curl "http://localhost:8000/transactions?type=transfer"
 
 # By date range
-curl "http://localhost:5000/transactions?from=2024-01-01&to=2024-12-31"
+curl "http://localhost:8000/transactions?from=2024-01-01&to=2024-12-31"
 
 # Combined filters
-curl "http://localhost:5000/transactions?accountId=ACC-12345&type=transfer"
+curl "http://localhost:8000/transactions?accountId=ACC-12345&type=transfer"
 ```
 
 **Get Account Summary:**
 ```bash
-curl http://localhost:5000/accounts/ACC-12345/summary
+curl http://localhost:8000/accounts/ACC-12345/summary
 ```
 
 ## ✅ Validation Rules

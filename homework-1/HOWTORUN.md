@@ -25,9 +25,25 @@ pip install -r requirements.txt
 
 ## Running the API
 
-Start the Flask development server:
+### Option 1: Using the run.sh Script (Recommended)
+
+From the demo folder, run:
 ```bash
-python app.py
+cd homework-1/demo
+./run.sh
+```
+
+This will automatically:
+- Create a virtual environment (if needed)
+- Install all dependencies
+- Start the Flask server on port 8000
+
+### Option 2: Manual Setup
+
+Navigate to the src directory and run:
+```bash
+cd homework-1/src
+python3 app.py
 ```
 
 The API will be available at `http://localhost:8000`
